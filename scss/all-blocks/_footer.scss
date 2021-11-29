@@ -1,0 +1,45 @@
+.footer {
+    padding: 144px 164px 110px;
+    background-color: #1D1C1E;
+
+    &__top {
+        padding: 40px 0;
+        border-bottom: 1px solid #fff;
+        max-width: 1111px;
+    }
+
+    &__link {
+        color: #FFFFFF;
+
+        &:hover {
+            text-decoration-line: underline;
+            color: #FFFFFF;
+        }
+
+        &:active {
+            opacity: 0.8;
+        }
+    }
+
+    &__logo {
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+}
+
+.footer__bottom {
+
+    padding: 31px 0 0;
+
+    &-address {
+        font-weight: bold;
+        line-height: 26px;
+        color: #FFFFFF;
+        // opacity: 0.5;
+    }
+}
