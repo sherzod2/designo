@@ -648,6 +648,105 @@ img {
   }
 }
 
+.types {
+  padding: 80px 0;
+}
+
+.types__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.types__web {
+  display: block;
+  background-image: url("../images/web-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 541px;
+  max-height: 640px;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 273px 136px;
+  text-align: center;
+}
+
+.types__web:hover {
+  -webkit-box-shadow: 541px 0 inset rgba(240, 111, 82, 0.6);
+          box-shadow: 541px 0 inset rgba(240, 111, 82, 0.6);
+}
+
+.types__app {
+  display: block;
+  background-image: url("../images/app-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  max-width: 541px;
+  max-height: 308px;
+  text-decoration: none;
+  text-align: center;
+  padding: 107px 143px;
+  margin-bottom: 24px;
+}
+
+.types__app:hover {
+  -webkit-box-shadow: 541px 0 inset rgba(240, 111, 82, 0.6);
+          box-shadow: 541px 0 inset rgba(240, 111, 82, 0.6);
+}
+
+.types__graphic {
+  display: block;
+  background-image: url("../images/graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  max-width: 541px;
+  max-height: 308px;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  padding: 107px 88px;
+}
+
+.types__graphic:hover {
+  -webkit-box-shadow: 541px 0 inset rgba(240, 111, 82, 0.6);
+          box-shadow: 541px 0 inset rgba(240, 111, 82, 0.6);
+}
+
+.types__item-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.types__item-desc {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
 .footer {
   padding: 144px 164px 110px;
   background-color: #1D1C1E;
