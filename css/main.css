@@ -426,6 +426,7 @@ img {
   max-width: 1151px;
   margin: 0 auto;
   padding: 0 20px;
+  border: 2px solid wheat;
 }
 
 .button {
@@ -942,8 +943,9 @@ img {
 
 .footer__top {
   padding: 40px 0;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   max-width: 1111px;
+  width: 100%;
 }
 
 .footer__link {
@@ -969,12 +971,40 @@ img {
 }
 
 .footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 31px 0 0;
 }
 
-.footer__bottom-address {
+.footer__bottom-address, .footer__bottom-right {
+  max-width: 350px;
+  width: 100%;
   font-weight: bold;
   line-height: 26px;
   color: #FFFFFF;
+  opacity: 0.5;
+  margin: 0;
+}
+
+.footer__bottom-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.footer__bottom-item + .footer__bottom-item {
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
