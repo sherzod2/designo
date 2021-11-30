@@ -659,6 +659,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -669,9 +671,10 @@ img {
   background-image: url("../images/web-design.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 541px;
-  max-height: 640px;
   border-radius: 15px;
+  max-width: 541px;
+  width: 100%;
+  max-height: 640px;
   text-decoration: none;
   padding: 273px 136px;
   text-align: center;
@@ -690,6 +693,7 @@ img {
   border-radius: 15px;
   max-width: 541px;
   max-height: 308px;
+  width: 100%;
   text-decoration: none;
   text-align: center;
   padding: 107px 143px;
@@ -745,6 +749,73 @@ img {
   height: 100%;
   width: 100%;
   margin: 0;
+}
+
+@media only screen and (max-width: 1125px) {
+  .types__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 60px 0;
+  }
+  .types__web {
+    background-image: url("../images/web-design-tablet.jpg");
+    padding: 53px 20px;
+    max-width: 689px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .types__right {
+    max-width: 689px;
+    width: 100%;
+  }
+  .types__app {
+    background-image: url("../images/app-design-tablet.jpg");
+    padding: 53px 20px;
+    max-width: 689px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .types__graphic {
+    background-image: url("../images/graphic-design-tablet.jpg");
+    padding: 53px 20px;
+    max-width: 689px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .types__web {
+    background-image: url("../images/web-design-mobile.jpg");
+    padding: 90px 20px;
+    max-width: 480px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .types__right {
+    max-width: 480px;
+    width: 100%;
+  }
+  .types__app {
+    background-image: url("../images/app-design-mobile.jpg");
+    padding: 90px 20px;
+    max-width: 480px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .types__graphic {
+    background-image: url("../images/graphic-design-mobile.jpg");
+    padding: 90px 20px;
+    max-width: 480px;
+    width: 100%;
+  }
+  .types__item-title {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+    margin-bottom: 12px;
+  }
 }
 
 .footer {
