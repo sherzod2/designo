@@ -4,9 +4,18 @@
     line-height: 22px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #333136;
+    background-color: #fff;
     padding: 16px 25px;
-    background: #FFAD9B;
     border-radius: 8px;
     border: none;
+
+    &:hover{
+        background: #FFAD9B;
+        color: #fff;
+    }
+
+    &:active{
+        opacity: 0.6;
+    }
 }

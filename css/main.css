@@ -434,11 +434,20 @@ img {
   line-height: 22px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #333136;
+  background-color: #fff;
   padding: 16px 25px;
-  background: #FFAD9B;
   border-radius: 8px;
   border: none;
+}
+
+.button:hover {
+  background: #FFAD9B;
+  color: #fff;
+}
+
+.button:active {
+  opacity: 0.6;
 }
 
 .hero-top {
@@ -520,6 +529,7 @@ img {
 @media only screen and (max-width: 650px) {
   .header {
     position: relative;
+    padding: 35px 0;
   }
   .header__hamburger {
     display: inline-block;
@@ -556,6 +566,86 @@ img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.hero {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.hero__container {
+  max-width: 1111px;
+  width: 100%;
+  background-image: url("../images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 145px 0 145px 95px;
+  border-radius: 15px;
+}
+
+.hero__left {
+  max-width: 540px;
+}
+
+.hero__title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.hero__desc {
+  line-height: 26px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 40px;
+  max-width: 445px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero__container {
+    background-position: center center;
+    padding-left: 70px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero__container {
+    padding: 60px 0;
+    padding-bottom: 460px;
+    background-image: url("../images/hero-tablet.png");
+  }
+  .hero__left {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__title {
+    text-align: center;
+  }
+  .hero__desc {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .hero__container {
+    padding: 60px 24px;
+    padding-bottom: 460px;
+  }
+  .hero__title {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 14px;
+  }
+  .hero__desc {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 .footer {

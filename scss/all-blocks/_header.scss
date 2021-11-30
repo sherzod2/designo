@@ -1,96 +1,98 @@
-.hero-top{
+.hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 64px 0;
+
+  &__logo {
+    display: inline-block;
+    flex-shrink: 0;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    background-image: url("../images/humburger-header.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 20px;
+  }
+}
+
+.site-nav {
+  &__list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    padding: 0 21px;
+    white-space: nowrap;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: #333136;
+
+    &:hover {
+      letter-spacing: 2px;
+      text-decoration-line: underline;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
 }
 
-.header{
-    padding: 64px 0;
-    &__logo{
-        display: inline-block;
-        flex-shrink: 0;
-
-        &:hover{
-            opacity: 0.8;
-        }
-
-        &:active{
-            opacity: 0.6;
-        }
-    }
+@media only screen and (max-width: 650px) {
+  .header {
+    position: relative;
+    padding: 35px 0;
 
     &__hamburger {
-        display: none;
-        background-color: transparent;
-        border: none;
-        background-image: url("../images/humburger-header.svg");
-        background-repeat: no-repeat;
-        width: 24px;
-        height: 20px;
-      }
-}
-
-.site-nav{
-    &__list{
-        display: flex;
-        align-items: center;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+      display: inline-block;
     }
+  }
 
-    &__item{
-        padding: 0 21px;
-        white-space: nowrap;
-    }
+  .site-nav {
+    display: none;
+  }
 
-    &__link{
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 14px;
-        line-height: 14px;
-        letter-spacing: 2px;
-        color: #333136;
+  .header--open .header__hamburger {
+    background-image: url("../images/times-solid.svg");
+  }
 
-        &:hover{
-            letter-spacing: 2px;
-            text-decoration-line: underline;
-        }
+  .header--open .site-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: pink;
+  }
 
-        &:active{
-            opacity: 0.6;
-        }
-    }
-}
-
-@media only screen and (max-width: 650px){
-    .header {
-        position: relative;
-
-        &__hamburger {
-          display: inline-block;
-        }
-      }
-
-      .site-nav {
-        display: none;
-      }
-
-      .header--open .header__hamburger {
-        background-image: url("../images/times-solid.svg");
-      }
-
-      .header--open .site-nav {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: pink;
-      }
-
-      .header--open .site-nav__list {
-        flex-direction: column;
-      }
+  .header--open .site-nav__list {
+    flex-direction: column;
+  }
 }
