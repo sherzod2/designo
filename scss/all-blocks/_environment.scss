@@ -1,0 +1,111 @@
+.environment{
+    padding: 80px 0;
+
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        margin: -15px;
+        padding: 0;
+    }
+
+    &__item{
+        margin: 15px;
+        max-width: 350px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__item-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #333136;
+        margin: 3rem 0 2rem;
+    }
+
+    &__item-desc{
+        line-height: 26px;
+        text-align: center;
+        color: #333136;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1110px){
+    .environment{
+
+        &__list{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &__item:nth-child(3){
+            margin-top: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 770px){
+    .environment{
+        padding: 60px 0;
+
+        &__list{
+            flex-direction: column;
+        }
+
+        &__item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 730px;
+            margin: 0;
+
+            &-text{
+                max-width: 440px;
+                width: 100%;
+            }
+
+            &-title{
+                margin: 0 0 1rem;
+                text-align: left;
+
+            }
+
+            &-desc{
+                text-align: left;
+            }
+        }
+
+        &__item + &__item{
+            margin-top: 2rem;
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 665px){
+    .environment{
+
+        &__item{
+            flex-direction: column;
+
+            &-title{
+                text-align: center;
+                margin: 3rem 0 2rem;
+            }
+
+            &-desc{
+                text-align: center;
+            }
+        }
+
+        &__item + &__item{
+            margin-top: 5rem;
+        }
+    }
+}
