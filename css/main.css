@@ -426,7 +426,6 @@ img {
   max-width: 1151px;
   margin: 0 auto;
   padding: 0 20px;
-  border: 2px solid wheat;
 }
 
 .button {
@@ -937,7 +936,7 @@ img {
 }
 
 .footer {
-  padding: 144px 164px 110px;
+  padding: 144px 0 72px;
   background-color: #1D1C1E;
 }
 
@@ -1002,6 +1001,7 @@ img {
   padding: 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  margin-left: 197px;
 }
 
 .footer__bottom-item + .footer__bottom-item {

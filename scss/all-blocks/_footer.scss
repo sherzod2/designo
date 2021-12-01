@@ -1,6 +1,9 @@
 .footer {
-    padding: 144px 164px 110px;
+    padding: 144px 0 72px;
     background-color: #1D1C1E;
+
+    // &__conatiner{
+    // }
 
     &__top {
         padding: 40px 0;
@@ -55,7 +58,7 @@
         margin: 0;
         padding: 0;
         align-self: flex-end;
-        // margin-left: 90px;
+        margin-left: 197px;
     }
 
     &-item + &-item{
